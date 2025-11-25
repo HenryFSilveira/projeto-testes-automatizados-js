@@ -1,0 +1,19 @@
+{
+  "name": "projeto-para-testes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+    "test:unit": "jest tests/unit",
+    "test:system": "npx playwright test tests/system --project=chromium",
+    "test:all": "npm run test:unit && npm run test:system"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/test": "^1.56.1",
+    "jest": "^30.2.0"
+  }
+}
